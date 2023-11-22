@@ -1,0 +1,51 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import ImageSrc from "../assets/websitepicture1.png";
+import { Image } from "astro:assets";
+---
+
+<Layout title="Xhantilomzi Mfecane">
+	<main class="mt-8 grid grid-cols-2 h-screen place-items-center">
+		<div>
+			<h1>
+				Hi, I'm <span class="text-gradient">Xhantilomzi Mfecane</span>, a
+				Developer from Port Elizabeth
+			</h1>
+		</div>
+		<div class="flex items-center justify-center w-full h-full rounded sm:w-96">
+			<Image
+				src={ImageSrc}
+				alt="Xhantilomzi Mfecane"
+				class="w-full"
+				format="avif"
+			/>
+		</div>
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1rem;
+		/* width: 800px; */
+		max-width: calc(100% - 2rem);
+		color: white;
+		font-size: 20px;
+		line-height: 1.6;
+	}
+	h1 {
+		font-size: 4rem;
+		font-weight: 700;
+		line-height: 1;
+		text-align: center;
+		margin-bottom: 1em;
+	}
+	.text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+</style>

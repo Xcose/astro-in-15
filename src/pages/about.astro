@@ -1,0 +1,55 @@
+---
+import Layout from "../layouts/Layout.astro";
+import ImageSrc from "../assets/closeup.png";
+import { Image } from "astro:assets";
+---
+
+<Layout title="Get to know me better">
+	<p class="text-7xl text-center">A LITTLE ABOUT MYSELF</p>
+	<section class="mt-8 grid grid-cols-2 h-screen place-items-center px-10">
+		<div>
+			<p class="text-justify text-3xl">
+				I am continuously looking to better the skill set that I have acquired
+				over my years of study and willing to learn new things that will benefit
+				me and the ones around me. I am a good team player that works well with
+				other people, I am a problem solver and I can manage my time well.
+			</p>
+		</div>
+		<div class="flex items-center justify-center w-full h-full rounded sm:w-96">
+			<Image src={ImageSrc} alt="Xhantilomzi Mfecane" class="w-full" />
+		</div>
+	</section>
+	<!-- Career section -->
+	<p class="text-7xl text-center">MY CAREER JOURNEY</p>
+	<section class="mt-8 grid grid-cols-3 place-items-center p-10 gap-10">
+		<div class="card">
+			<span class="card-date"> 2018 - 2018</span>
+			<h2 class="card-title">Senior Associate</h2>
+			 I worked for WNS call centre for 11 months as an inbound senior associate
+			for assurance department where I assisted with troubleshooting email, ADSL
+			lines, fibre lines for Telkom as well as other third-party fibre lines
+			like Vumatel and Link Africa.
+		</div>
+		<div class="card">
+			<span class="card-date"> 2018 - 2021</span>
+			<h2 class="card-title">Tier 2 Senior Associate</h2>
+			 I worked as a tier 2 outbound Senior Associate that deals with internal
+			technical cases as well as escalated internal technical cases that need to
+			be attended for email, ADSL, Telkom fibre and other third-party companies
+			like Vumatel and Link Africa
+		</div>
+		<div class="card">
+			<span class="card-date"> 2021 - Current</span>
+			<h2 class="card-title">Technical support</h2>
+			 I am currently working for Axxess technical support where my role deals
+			with assisting and support client with technical queries for fibre and
+			ADSL connection, emails, LTE and VoIP.
+		</div>
+	</section>
+
+	<style>
+		body {
+			color: white;
+		}
+	</style>
+</Layout>
